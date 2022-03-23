@@ -1,3 +1,9 @@
+#SearchConditions{
+    font-size:30px;
+    font-family:Microsoft JhengHei;
+    background-color: lightgray;
+    display:none;
+}
 div{
     font-size: 40px;
     font-family:Microsoft JhengHei;

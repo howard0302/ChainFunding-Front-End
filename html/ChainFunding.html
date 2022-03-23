@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./ChainFunding.css">
+    <link rel="stylesheet" type="text/css" href="../css/ChainFunding.css">
     <script src="https://kit.fontawesome.com/d81c0e5457.js" crossorigin="anonymous"></script>
     <title>ChainFunding</title>
 </head>
@@ -13,24 +13,60 @@
     <header>
         <span style="font-size: 50px;">LOGO</span>
         <span style="font-size: 50 px;">集資</span>
-        <a href="./table.html"><i class="fa-solid fa-bars" style="color: black;"></i></a>
-            <input type="text" style="font-size: 25px;"  placeholder="集資搜尋">
-        <i class="fa-solid fa-comments" style="font-size:50px;color: brown;"></i>
-        <span>幫助</span>
+        
+        <button id="bars1" class="fa-solid fa-bars" style="color: black;"></button>
+        
+        <input type="text" style="font-size: 25px;"  placeholder="集資搜尋">
         <i class="fa-solid fa-bell" style="font-size: 50px;color:darkorange;"></i>
         <span>通知</span>
         <i class="fa-solid fa-globe" style="font-size: 50px;color: blue;"></i>
         <span>語言</span>
-    <select style="font-size: 30px;">
+    <select style="font-size: 50px;">
         <option value="">繁體中文</option>
         <option value="">English</option>
     </select>
         <a href="./login.html">登入</a>
-        <a href="./signup.html">註冊</a>
         
     </header>
+    <table id="SearchConditions" style="text-align: center" border="1">
+        <tr>
+            <td>已發起集資</td>
+            <td class="cb">
+                是<input type="checkbox">
+                否<input type="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <td>幣種</td>
+            <td class="cb">
+                Coin1<input type="checkbox">
+                Coin2<input type="checkbox">
+                Coin3<input type="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <td>價格</td>
+            <td>
+                <select>
+                    <option value="">100$~1000$</option>
+                    <option value="">1000$~10000$</option>
+                    <option value="">10000$~100000$</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>集資發起人評價</td>
+            <td class="cb">
+                1star<input type="checkbox">
+                2star<input type="checkbox">
+                3star<input type="checkbox">
+                4star<input type="checkbox">
+                5star<input type="checkbox">
+            </td>
+        </tr>
+    </table>
     <textarea name="" id="" cols="200" rows="35"></textarea>
-        <footer>
+    <footer>
             <span class="footer-text">客服中心</span>
             <span>|</span>
             <span class="footer-text">關於我們</span>
@@ -55,7 +91,9 @@
             <span class="footer-text">Copyright © 2022 ChainFunding 保留一切權利.</span>
             </span>
         </div>
-    </div>
-      </footer>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
